@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Form</title>
+  </head>
+  <body>
+    <h1>Contact Information</h1>
+    <p>
+      Name* :
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Enter Your Full Name"
+        required
+      />
+    </p>
+    <p>
+      Gender* : Male<input type="radio" name="gender" id="gender" />
+      Female<input type="radio" name="gender" id="gender" required />
+    </p>
+    <p>
+      Address* :
+      <textarea
+        name="address"
+        id="address"
+        cols="30"
+        rows="10"
+        placeholder="Please enter your address"
+        required
+      ></textarea>
+    </p>
+    <p>
+      Phone Number* :
+      <input
+        type="number"
+        name="number"
+        id="number"
+        placeholder="Please add the extension"
+        required
+      />
+    </p>
+    <p>Email* : <input type="email" name="email" id="email" required /></p>
+    <p>Pincode : <input type="number" name="pincode" id="pincode" /></p>
+
+    <h2>Payment Information</h2>
+    <p>
+      Card Type* :
+      <select name="card_type" id="card_type">
+        <option value="">--Select a Card type--</option>
+        <option value="Visa">Visa</option>
+        <option value="Rupay">Rupay</option>
+        <option value="Mastercard">MasterCard</option>
+        required
+      </select>
+    </p>
+    <p>
+      Account Holder* : <input type="text" name="holder" id="holder" required />
+    </p>
+    <p>
+      Debit/Credit Card Number* :
+      <input
+        type="number"
+        name="number"
+        id="number"
+        placeholder="Please enter your 16-digit card number"
+        required
+      />
+    </p>
+    <p>
+      Expiration Date*:
+      <input type="date" name="exp_date" id="exp_date" required />
+    </p>
+    <p>
+      CVV* :
+      <input
+        type="password"
+        name="cvv"
+        id="cvv"
+        placeholder="Please Enter 3-digit CVV"
+        required
+      />
+    </p>
+    <p>
+      <input type="submit" value="Proceed To Payment" />
+      <input type="reset" value="Reset" />
+    </p>
+  </body>
+</html>
